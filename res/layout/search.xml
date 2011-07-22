@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/TitleBar"
+	android:orientation="horizontal"
+	android:layout_width = "fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="left|top">
+	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width = "wrap_content"
+			  android:layout_height="wrap_content"
+			  android:gravity="left|center_vertical"
+			  android:layout_gravity="left"> 
+			  
+			  <ImageButton style="@style/TitleBarOperation"
+            			   android:src="@drawable/home_def"
+            			   android:background="@drawable/home_bg"
+            			   android:onClick="onHome" 
+            			   android:layout_marginTop = "5dip"
+            			   android:layout_marginRight="5dip"
+            			   android:paddingBottom="3dip"
+            			   android:layout_marginLeft = "4dip"
+            			   android:layout_marginBottom = "4dip"
+            			   android:layout_gravity="center"/>
+              
+              <ImageView android:layout_width="1px"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/separator"
+			   android:layout_marginRight="5dip"/>
+			   
+              <EditText android:id="@+id/input_text"
+              			android:layout_height="fill_parent"
+              			android:layout_width="180dip"
+              			android:layout_marginTop="2dip"
+              			android:layout_gravity="center"
+              			android:textSize="10sp"
+              			android:text = "search here..." 
+              			android:layout_marginLeft="5dip"
+              			android:layout_marginRight="8dip"/>
+                		   
+			<ImageView android:layout_width="1px"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/separator"
+			   android:layout_marginLeft="2dip"/>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width = "fill_parent"
+			  android:layout_height="wrap_content"
+			  android:gravity="right"
+			  android:layout_gravity="right">
+			  
+			   <ImageButton style="@style/TitleBarOperation"
+            			   android:src="@drawable/about_click"
+            			   android:onClick="onAbout"
+						   android:layout_marginLeft="3dip"
+						   android:layout_marginTop = "6dip"
+						   android:background="@null"
+						   android:layout_marginRight="3dip"/>
+            			   
+			  <ImageView android:layout_width="1px"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/separator"
+			   android:layout_marginRight="5dip"/>
+			   
+			  <ImageButton style="@style/TitleBarOperation"
+            			   android:src="@drawable/search"
+            			   android:onClick="onSearch" 
+            			   android:background="@drawable/home_bg"
+            			   android:layout_marginTop = "6dip"
+            			   android:layout_marginLeft="2dip"
+            			   android:layout_marginRight="2dip"/>
+	</LinearLayout>
+	
+	</LinearLayout>	
+
+</LinearLayout>
+	
+	<LinearLayout	xmlns:android="http://schemas.android.com/apk/res/android" 
+					android:orientation="vertical"
+    				android:layout_width="fill_parent"
+    				android:layout_height="fill_parent"
+    				android:scrollbars="vertical"
+    				android:background="@drawable/background">		
+    	
+    	<TextView 
+          android:id="@+id/search" 
+          android:layout_width="wrap_content" 
+    	  android:layout_height="wrap_content"
+          android:textSize="12sp"
+          android:padding= "20dip"
+	      android:textStyle="bold" 
+	      android:textColor="#ff29549f"
+	      android:lineSpacingMultiplier="1.1"
+	      android:text ="@string/search_detail" />
+	
+	</LinearLayout>
+
+
+</LinearLayout>

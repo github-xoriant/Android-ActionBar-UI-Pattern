@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_screen">Welcome to ActionBarAppActivity!</string>
+    <string name="app_name">ActionBarApp</string>
+
+	<string name="about_detail">Sample App to display use of Action bar</string>
+	
+	<string name="search_detail">Search Results Available</string>
+
+	<string name="title_about">About</string>
+	<string name="title_home">Home</string>
+	<string name="title_search">Search</string>
+	
+</resources>

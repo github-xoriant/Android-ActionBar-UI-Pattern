@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	style="@style/TitleBar"
+	android:layout_width = "fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="left|top">
+	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width = "wrap_content"
+			  android:layout_height="wrap_content"
+			  android:gravity="left"
+			  android_gravity = "left|vertical_center"> 
+			  
+			  <ImageButton style="@style/TitleBarOperation"
+            			   android:src="@drawable/home_def"
+            			   android:onClick="onHome" 
+            			   android:layout_marginTop = "5dip"
+            			   android:layout_marginRight="5dip"
+            			   android:layout_marginLeft="4dip"
+            			   android:layout_marginBottom = "4dip"
+            			   android:paddingBottom = "3dip"
+            			   android:background="@drawable/home_bg"
+            			   android:layout_gravity="center"
+            			    />
+			  
+			  <ImageView android:layout_width="1px"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/separator"
+			   android:layout_marginRight="5dip"/>
+			  
+			  <TextView style="@style/TitleBarText" 
+			  android:text="Action Bar Sample" 
+			  android:paddingLeft="8dip"/>
+    		   
+	<ImageView android:layout_width="1px"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/separator"
+			   android:layout_marginLeft="5dip"
+			   android:layout_marginRight="7dip"/>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width = "fill_parent"
+			  android:layout_height="wrap_content"
+			  android:gravity="right"
+			  android:layout_gravity="right">
+			  
+			   <ImageButton style="@style/TitleBarOperation"
+            			   android:src="@drawable/about_click"
+            			   android:onClick="onAbout" 
+            			   android:layout_marginTop = "6dip"
+            			   android:layout_marginBottom = "4dip"
+            			   android:layout_marginLeft="5dip"
+            			   android:background="@null"
+            			   android:layout_marginRight="5dip"/>
+            			   
+			  <ImageView android:layout_width="1px"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/separator"
+			   android:layout_marginLeft = "5dip"
+			   android:layout_marginRight="5dip"
+			   />
+			   	  
+			  <ImageButton style="@style/TitleBarOperation"
+            			   android:src="@drawable/search"
+            			   android:layout_marginTop = "6dip"
+            			   android:layout_marginBottom = "4dip"
+            			   android:onClick="onSearch" 
+            			   android:background="@drawable/home_bg"
+            			   android:layout_marginRight="5dip"/>
+	</LinearLayout>
+	</LinearLayout>	
+
+</LinearLayout>
+
+	<LinearLayout	xmlns:android="http://schemas.android.com/apk/res/android" 
+					android:orientation="vertical"
+    				android:layout_width="fill_parent"
+    				android:layout_height="fill_parent"
+    				android:scrollbars="vertical"
+    				android:background="@drawable/background">	
+		<TextView 
+          		android:id="@+id/welcome" 
+          		android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+          		android:padding= "20dip"
+          		android:textSize="12sp"
+	      		android:textStyle="bold" 
+	      		android:textColor="#ff29549f"
+	      		android:lineSpacingMultiplier="1.1"
+	      		android:text ="@string/main_screen" />
+	 
+	 </LinearLayout>     		
+</LinearLayout>
